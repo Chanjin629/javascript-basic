@@ -5,10 +5,14 @@
 const loginInput = document.querySelector("#login-form input");
 const loginForm = document.querySelector("#login-form");
 
-function onLoginSubmit() {
-    const username = loginInput.value;
+function onLoginSubmit(event) {
+    event.preventDefault();
+    const username = loginInput.value
+    loginForm.classList.add("hidden")
     console.log(username)
-    
 }
 
-loginForm.addEventListener("submit", onLoginSubmit)
+
+loginForm.addEventListener("submit", onLoginSubmit);
+
+
