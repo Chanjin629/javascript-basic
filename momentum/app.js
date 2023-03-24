@@ -1,8 +1,8 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const h2 = document.querySelector("h2");
 
 function handleTitleClick(){
 
-    h1.classList.toggle("clicked");
+    h2.classList.toggle("clicked");
     // if(h1.classList.contains(clickedClass)) {
     //     h1.classList.remove(clickedClass);
     // } else {
@@ -42,7 +42,7 @@ function handleTitleClick(){
 //     alert("ALL GOOD");
 // }
 
-h1.addEventListener("click", handleTitleClick); // h1.onclick = handleTitleClick;
+h2.addEventListener("click", handleTitleClick); // h1.onclick = handleTitleClick;
 
 // h1.addEventListener("mouseenter", handleMouseEnter); //h1.onmouseenter = handleMouseEnter;
 // h1.addEventListener("mouseleave", handleMouseLeave); //h1.onmouseleave = handleMouseLeave;
