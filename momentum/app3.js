@@ -1,5 +1,13 @@
 const bd = document.querySelector("body");
-
+if (window.innerWidth >= 1200) {
+  bd.className = "large"
+} 
+else if (window.innerWidth < 1200 && window.innerWidth > 900) {
+  bd.className = "medium"
+} 
+else {
+  bd.className = "small"
+}
 function changeColorHandler(){
     const widthSize = window.innerWidth;
     const Large = "large";
