@@ -11,7 +11,7 @@ const MACHINE_KEY = "number2"
 
 function onNumberSubmit(event) {
     event.preventDefault();
-    let randomNumber = Math.floor(Math.random() *max.value + 1);
+    let randomNumber = Math.floor(Math.random() * (parseInt(max.value) + 1));
     const number1 = myChose.value;
     const number2 = randomNumber;
     localStorage.setItem(CHOSE_KEY, number1);
